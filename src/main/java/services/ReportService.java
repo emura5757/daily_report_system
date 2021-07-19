@@ -11,7 +11,7 @@ import constants.JpaConst;
 import models.Report;
 import models.validators.ReportValidator;
 
-public class ReportSevice extends ServiceBase {
+public class ReportService extends ServiceBase {
     public List<ReportView> getMinePerPage(EmployeeView employee, int page) {
 
         List<Report> reports = em.createNamedQuery(JpaConst.Q_REP_GET_ALL_MINE, Report.class)
